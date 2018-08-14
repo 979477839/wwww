@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/vue.js">
+		 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		</script>
+		<style type="text/css">
+			.yqy{
+				height:300px;
+				width:300px;
+				background: blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cjq">
+		<input type="number"  v-model="w"/>
+		<input type="number"  v-model="h"/>
+		<div class="yqy" v-bind:style="zxq"></div>
+		</div>
+		<script type="text/javascript">
+			new Vue({
+				el:".cjq",
+				data:{
+					w:300,
+					h:300,
+				},
+				computed:{
+					zxq(){
+						return {width:this.w+'px',height:this.h+'px'}
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
