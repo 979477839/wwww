@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title></title>
+	</head>
+	<body>
+		<button id="btn">aa</button>
+		<div id="box">
+			bbb
+		</div>
+		<script type="text/javascript">
+			var t =0;
+			box.addEventListener("touchstart",()=>{
+				 t =new Date().getTime();
+			})
+			box.addEventListener("click",()=>{
+				btn.innerHTML=new Date().getTime() -t
+			})
+		</script>
+	</body>
+</html>
